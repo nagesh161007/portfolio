@@ -1,0 +1,21 @@
+.experienceContainer {
+  width: 100%;
+  .header {
+    width: 100%;
+    background-color: #394754;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    padding: 0.5rem 0.75rem;
+  }
+  .content {
+    height: 85%;
+    overflow-y: scroll;
+    list-style-type: none;
+    padding: 0.5rem 0.5rem;
+    .experience {
+      padding: 0.5rem 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.layout {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: calc(100vh - 3rem);
+}
+
+.appSection {
+  flex: 1;
+}

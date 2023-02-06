@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.appbar {
+  height: 4rem;
+  background-color: $navbar-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1rem;
+  .title {
+    padding: 0 1rem;
+    flex: 1;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+
+  .leftSection {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    .views {
+      display: flex;
+
+      align-items: center;
+      .viewCount {
+        margin-left: 0.5rem;
+        font-size: 0.875rem;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      margin: 0 1rem;
+      justify-content: space-around;
+      border-right: 1px solid $icon-secondary;
+      border-left: 1px solid $icon-secondary;
+      padding: 0 1rem;
+      .estimated {
+      }
+      .name {
+        font-size: 0.875rem;
+      }
+    }
+
+    .company {
+      display: flex;
+      align-items: center;
+      padding-right: 1rem;
+      justify-content: space-around;
+      border-right: 1px solid $icon-secondary;
+      margin-right: 1rem;
+    }
+    .logo {
+    }
+  }
+}

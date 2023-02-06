@@ -1,0 +1,80 @@
+.skillHeading {
+  box-sizing: border-box;
+  color: #f2f2f2;
+  display: inline-block;
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  padding: 0.5rem 0.75rem;
+  background-color: #394754;
+  width: 100%;
+}
+
+.skillSection {
+  width: 100%;
+}
+.skillList {
+  overflow-y: scroll;
+  color: #f2f2f2;
+  background-color: #222a32;
+  height: 85%;
+
+  li:nth-child(odd) {
+    background-color: #2b323a;
+  }
+  .skill {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    .skillImage {
+      height: 24px;
+      width: 24px;
+      margin-right: 16px;
+    }
+    .skillRatingContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      .skillRatingInfo {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 4px;
+        .skillName {
+          color: #f2f2f2;
+        }
+        .skillRating {
+          color: #f2f2f2;
+        }
+      }
+      .skillProgressContainer {
+        position: relative;
+        background-color: #394754;
+        border-radius: 16px;
+        width: 100%;
+        height: 8px;
+        .skillProgressBar {
+          transition: width 2s ease-in-out;
+          position: absolute;
+        }
+        .progress {
+          animation: animateprogress 2s forwards;
+          background-color: #36b84b;
+          height: 8px;
+          border-radius: 16px;
+        }
+        @keyframes animateprogress {
+          0% {
+            width: 0%;
+          }
+          100% {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

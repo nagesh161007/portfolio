@@ -1,0 +1,145 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  color: $primary-color;
+  background-color: $background-blue;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Roboto";
+  background: url("../../public/app-background.jpeg");
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#svg-text {
+  animation: textanimation 3s infinite;
+}
+
+@keyframes textanimation {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#top-left-light {
+  top: -40px;
+}
+
+#top-right-light {
+  top: -40px;
+}
+
+#bottom-right-light {
+  bottom: -40px;
+}
+#bottom-left-light {
+  bottom: -40px;
+}
+
+.timeline-card {
+  opacity: 1 !important;
+  #top-left-light-ray {
+    animation: turnOnBottomLeft 300ms ease-in-out 0.5s 1 forwards;
+    opacity: 0;
+  }
+
+  #top-right-light-ray {
+    animation: turnOnTopRight 300ms ease-in-out 0.5s 1 forwards;
+    opacity: 0;
+  }
+
+  #bottom-right-light-ray {
+    animation: turnOnBottomRight 300ms ease-in-out 0.5s 1 forwards;
+    opacity: 0;
+  }
+  #bottom-left-light-ray {
+    animation: turnOnTopLeft 300ms ease-in-out 0.5s 1 forwards;
+    opacity: 0;
+  }
+
+  #top-left-light {
+    animation: intoViewTop ease-in-out 0.5s forwards;
+  }
+
+  #top-right-light {
+    animation: intoViewTop ease-in-out 0.5s forwards;
+  }
+
+  #bottom-right-light {
+    animation: intoViewBottom ease-in-out 0.5s forwards;
+  }
+
+  #bottom-left-light {
+    animation: intoViewBottom ease-in-out 0.5s forwards;
+  }
+}
+
+@keyframes intoViewTop {
+  0% {
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+@keyframes intoViewBottom {
+  0% {
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes turnOnTopLeft {
+  0% {
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes turnOnTopRight {
+  0% {
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes turnOnBottomLeft {
+  0% {
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes turnOnBottomRight {
+  0% {
+  }
+  100% {
+    opacity: 1;
+  }
+}

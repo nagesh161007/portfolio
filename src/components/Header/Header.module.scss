@@ -1,0 +1,70 @@
+@import "../../styles/variables.scss";
+
+.appHeader {
+  height: 3rem;
+  width: 100%;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  letter-spacing: 0.5px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $white;
+  font-style: italic;
+  opacity: 0.6;
+  cursor: pointer;
+  min-width: fit-content;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    opacity: 0.8;
+    margin: 0 1rem;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.status {
+  margin-left: 1rem;
+  color: $primary-color;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.75em solid $primary-color; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 7s steps(30, end), blink-caret 0.75s step-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: $primary-color;
+    opacity: 0;
+  }
+}

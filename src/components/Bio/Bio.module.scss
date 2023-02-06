@@ -1,0 +1,71 @@
+@import "../../styles/variables.scss";
+
+.bioContainer {
+  width: 100%;
+  .headerTab {
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    background-color: #15191d;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .tab {
+      font-size: 0.875rem;
+      cursor: pointer;
+      padding: 0.5rem 0.75rem;
+      text-transform: uppercase;
+      flex: 1;
+      &:hover {
+        background-color: #1e242a;
+        color: #f8eede;
+        border-bottom: 2px solid $background-orange;
+      }
+      &.selected {
+        background-color: #f8eede;
+        color: #243962;
+        border-bottom: 2px solid $background-orange;
+      }
+    }
+  }
+  .tabContent {
+    overflow-y: scroll;
+    color: #f2f2f2;
+    background-color: #222a32;
+    height: 90%;
+    li:nth-child(odd) {
+      background-color: #2b323a;
+    }
+    .trait {
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        font-size: 0.75rem;
+        color: #f8eede;
+        text-transform: uppercase;
+      }
+      .traitImage {
+      }
+    }
+    .infoItem {
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .title {
+        font-size: 0.75rem;
+        color: #f8eede;
+        text-transform: uppercase;
+      }
+      .subtitle {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}

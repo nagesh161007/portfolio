@@ -1,0 +1,18 @@
+.companySwitcher {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  .company {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    transition: opacity 100ms ease-in-out;
+    &.show {
+      opacity: 1;
+    }
+    &.hide {
+      opacity: 0;
+    }
+  }
+}

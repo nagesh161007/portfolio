@@ -1,0 +1,109 @@
+.timelineContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 1rem;
+  .card {
+    opacity: 0.8;
+    object-fit: contain;
+    transition: opacity 100ms ease-in-out;
+    transition-delay: 0.5s;
+    cursor: pointer;
+    position: relative;
+    padding: 0rem 2rem;
+    .topLeft,
+    .topRight,
+    .bottomLeft,
+    .bottomRight {
+      position: absolute;
+      &.hide {
+        opacity: 0;
+      }
+    }
+    .topLeft {
+      top: 0px;
+      left: 0px;
+    }
+    .topRight {
+      top: 0px;
+      right: 0px;
+    }
+    .bottomLeft {
+      bottom: 0px;
+      left: 0px;
+    }
+    .bottomRight {
+      bottom: 0px;
+      right: 0px;
+    }
+  }
+  .history {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .companies {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .positions {
+      font-size: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+    }
+    .position {
+      max-width: min-content;
+      text-align: center;
+    }
+    .arrow {
+      height: 3px;
+      margin: 1rem 0;
+      background: #51bf0d;
+      animation: timeline 1s ease-in-out 100ms 1 backwards;
+      position: relative;
+      &:after {
+        content: "";
+        height: 3px;
+        position: absolute;
+        z-index: 1;
+        animation: slide 10s infinite 1s backwards;
+
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.8) 50%,
+          rgba(128, 186, 232, 0) 99%,
+          rgba(125, 185, 232, 0) 100%
+        );
+      }
+
+      /* animation */
+
+      @keyframes slide {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    }
+
+    @keyframes timeline {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+    .duration {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+    }
+  }
+}
