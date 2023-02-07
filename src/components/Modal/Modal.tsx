@@ -27,11 +27,13 @@ function Modal(props: modalProps) {
             Obsessed with FIFA Ultimate team game. Why not FUT theme based
             portfolio...
           </div>
-          <img
+          <Image
+            width={600}
+            height={400}
             src={"/themeInfo.png"}
             className={styles.image}
             alt={"theme-info"}
-          ></img>
+          ></Image>
         </div>
       </div>
     </div>
