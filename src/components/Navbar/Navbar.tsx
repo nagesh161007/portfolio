@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { HomeIcon, ProjectIcon, PathIcon, CertIcon } from "./icons";
 import Image from "next/image";
 import InfoIcon from "./icons/InfoIcon";
+import Modal from "../Modal/Modal";
 
 export const navBarItems = [
   {
@@ -35,7 +36,7 @@ export const navBarItems = [
 
 function Navbar() {
   const [isLoading, setLoading] = useState(true);
-
+  const [isModalOpen, openModal] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       console.log("set loading");
@@ -43,11 +44,19 @@ function Navbar() {
     }, 4000);
   }, []);
 
+  const handleModalClose = () => {
+    openModal(false);
+  };
+
+  const handleModalOpen = () => {
+    openModal(true);
+  };
+
   const router = useRouter();
   return (
     <nav className={styles.navbar}>
       <ul className={styles.navItemList}>
-        <div className={styles.imageContainer}>
+        <li className={styles.imageContainer}>
           {isLoading ? (
             <div className={styles.loader}></div>
           ) : (
@@ -69,7 +78,7 @@ function Navbar() {
               ></Image>
             </>
           )}
-        </div>
+        </li>
         {navBarItems.map((navItem, index) => {
           return (
             <li
@@ -90,9 +99,10 @@ function Navbar() {
           );
         })}
       </ul>
-      <div style={{ margin: "auto" }}>
+      <div style={{ margin: "auto" }} onClick={handleModalOpen}>
         <InfoIcon></InfoIcon>
       </div>
+      {isModalOpen && <Modal onClose={handleModalClose}></Modal>}
     </nav>
   );
 }
