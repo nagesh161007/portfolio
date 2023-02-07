@@ -9,7 +9,7 @@ function Header() {
   return (
     <div className={styles.appHeader}>
       <div className={styles.name}>NS 23</div>
-      <div className={styles.status}>
+      <div className={`${styles.status} header-description`}>
         Hi !. I am Nagesh, Former Senior Frontend Engineer at Flipkart.
         Currently Looking for summer 2023 Software Engineer intership
         opputunities
@@ -19,6 +19,7 @@ function Header() {
           href="https://github.com/nagesh161007"
           rel="noreferrer"
           target={"_blank"}
+          aria-label="github"
         >
           <Github></Github>
         </a>
@@ -26,6 +27,7 @@ function Header() {
           href="mailto:seeni.n@northeastern.edu"
           rel="noreferrer"
           target={"_blank"}
+          aria-label="mail"
         >
           <Mail></Mail>
         </a>
@@ -33,6 +35,7 @@ function Header() {
           href="https://www.linkedin.com/in/nageshwara-sairam/"
           rel="noreferrer"
           target={"_blank"}
+          aria-label="Linkedin"
         >
           <LinkedIn></LinkedIn>
         </a>

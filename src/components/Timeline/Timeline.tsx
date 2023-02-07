@@ -69,7 +69,13 @@ function Card(props: any) {
         <TopRightLight canShow={canShow}></TopRightLight>
         <BottomLeftLight canShow={canShow}></BottomLeftLight>
         <BottomRightLight canShow={canShow}></BottomRightLight>
-        <Image src={card.url} alt={"image"} height={270} width={200}></Image>
+        <Image
+          src={card.url}
+          alt={"image"}
+          height={270}
+          width={200}
+          loading={"eager"}
+        ></Image>
       </div>
       {card.history && (
         <div className={styles.history}>
