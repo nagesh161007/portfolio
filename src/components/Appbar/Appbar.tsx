@@ -11,7 +11,7 @@ function Appbar() {
       <div className={styles.title}>HOME</div>
       <div className={styles.leftSection}>
         <div>
-          <a href="https://drive.google.com/u/0/uc?id=1a-5aVQUt0Pj6ztZ8_g_aYPoKTGfS9Pz1&export=download">
+          <a href="https://drive.google.com/u/0/uc?id=1QZxevdNOQyc7111GlJ9Iqvllr2R04i_v&export=download">
             <Image
               src={"/resume.png"}
               width={32}
