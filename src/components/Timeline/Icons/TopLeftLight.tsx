@@ -188,11 +188,11 @@ const TopLeftLight = (props: any) => (
         y2="26.7759"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#231F20" />
-        <stop offset="0.427271" stop-color="#393536" />
-        <stop offset="0.48" stop-color="#393536" />
-        <stop offset="0.682233" stop-color="#393536" />
-        <stop offset="1" stop-color="#231F20" />
+        <stop stopColor="#231F20" />
+        <stop offset="0.427271" stopColor="#393536" />
+        <stop offset="0.48" stopColor="#393536" />
+        <stop offset="0.682233" stopColor="#393536" />
+        <stop offset="1" stopColor="#231F20" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_349_4"
@@ -202,15 +202,15 @@ const TopLeftLight = (props: any) => (
         y2="29.9472"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FBF1C8" />
-        <stop offset="0.011236" stop-color="#FBF1C8" />
-        <stop offset="0.174157" stop-color="#F8DA91" />
-        <stop offset="0.297753" stop-color="#F9E4A1" />
-        <stop offset="0.539326" stop-color="#EACF93" />
-        <stop offset="0.657303" stop-color="#F1D292" />
-        <stop offset="0.780899" stop-color="#FBEFCB" />
-        <stop offset="0.960674" stop-color="#F8E2AE" />
-        <stop offset="1" stop-color="#F8E2AE" />
+        <stop stopColor="#FBF1C8" />
+        <stop offset="0.011236" stopColor="#FBF1C8" />
+        <stop offset="0.174157" stopColor="#F8DA91" />
+        <stop offset="0.297753" stopColor="#F9E4A1" />
+        <stop offset="0.539326" stopColor="#EACF93" />
+        <stop offset="0.657303" stopColor="#F1D292" />
+        <stop offset="0.780899" stopColor="#FBEFCB" />
+        <stop offset="0.960674" stopColor="#F8E2AE" />
+        <stop offset="1" stopColor="#F8E2AE" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_349_4"
@@ -220,11 +220,11 @@ const TopLeftLight = (props: any) => (
         y2="0.683145"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#231F20" />
-        <stop offset="0.427271" stop-color="#393536" />
-        <stop offset="0.48" stop-color="#393536" />
-        <stop offset="0.682233" stop-color="#393536" />
-        <stop offset="1" stop-color="#231F20" />
+        <stop stopColor="#231F20" />
+        <stop offset="0.427271" stopColor="#393536" />
+        <stop offset="0.48" stopColor="#393536" />
+        <stop offset="0.682233" stopColor="#393536" />
+        <stop offset="1" stopColor="#231F20" />
       </linearGradient>
       <linearGradient
         id="paint3_linear_349_4"
@@ -234,11 +234,11 @@ const TopLeftLight = (props: any) => (
         y2="5.43541"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#231F20" />
-        <stop offset="0.243333" stop-color="#3F4048" />
-        <stop offset="0.5" stop-color="#231F20" />
-        <stop offset="0.696667" stop-color="#3F4048" />
-        <stop offset="1" stop-color="#231F20" />
+        <stop stopColor="#231F20" />
+        <stop offset="0.243333" stopColor="#3F4048" />
+        <stop offset="0.5" stopColor="#231F20" />
+        <stop offset="0.696667" stopColor="#3F4048" />
+        <stop offset="1" stopColor="#231F20" />
       </linearGradient>
       <linearGradient
         id="paint4_linear_349_4"
@@ -248,11 +248,11 @@ const TopLeftLight = (props: any) => (
         y2="12.5406"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#231F20" />
-        <stop offset="0.427271" stop-color="#393536" />
-        <stop offset="0.48" stop-color="#393536" />
-        <stop offset="0.682233" stop-color="#393536" />
-        <stop offset="1" stop-color="#231F20" />
+        <stop stopColor="#231F20" />
+        <stop offset="0.427271" stopColor="#393536" />
+        <stop offset="0.48" stopColor="#393536" />
+        <stop offset="0.682233" stopColor="#393536" />
+        <stop offset="1" stopColor="#231F20" />
       </linearGradient>
       <linearGradient
         id="paint5_linear_349_4"
@@ -262,11 +262,11 @@ const TopLeftLight = (props: any) => (
         y2="13.2389"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#231F20" />
-        <stop offset="0.427271" stop-color="#393536" />
-        <stop offset="0.48" stop-color="#393536" />
-        <stop offset="0.682233" stop-color="#393536" />
-        <stop offset="1" stop-color="#231F20" />
+        <stop stopColor="#231F20" />
+        <stop offset="0.427271" stopColor="#393536" />
+        <stop offset="0.48" stopColor="#393536" />
+        <stop offset="0.682233" stopColor="#393536" />
+        <stop offset="1" stopColor="#231F20" />
       </linearGradient>
       <linearGradient
         id="paint6_linear_349_4"
@@ -276,11 +276,11 @@ const TopLeftLight = (props: any) => (
         y2="14.0471"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#231F20" />
-        <stop offset="0.427271" stop-color="#393536" />
-        <stop offset="0.48" stop-color="#393536" />
-        <stop offset="0.682233" stop-color="#393536" />
-        <stop offset="1" stop-color="#231F20" />
+        <stop stopColor="#231F20" />
+        <stop offset="0.427271" stopColor="#393536" />
+        <stop offset="0.48" stopColor="#393536" />
+        <stop offset="0.682233" stopColor="#393536" />
+        <stop offset="1" stopColor="#231F20" />
       </linearGradient>
       <radialGradient
         id="paint7_radial_349_4"
@@ -290,8 +290,8 @@ const TopLeftLight = (props: any) => (
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(26.5449 31.3281) rotate(47.5758) scale(86.6143 53.7608)"
       >
-        <stop stop-color="#FFFBED" />
-        <stop offset="1" stop-color="#E4DEDE" stop-opacity="0" />
+        <stop stopColor="#FFFBED" />
+        <stop offset="1" stopColor="#E4DEDE" stopOpacity="0" />
       </radialGradient>
     </defs>
   </svg>

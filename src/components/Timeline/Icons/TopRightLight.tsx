@@ -11,7 +11,7 @@ const TopRightLight = (props: any) => (
     id="top-right-light"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_349_5)">
+    <g clipPath="url(#clip0_349_5)">
       <path
         d="M81.518 22.1132L79.0356 22.0754L80.1919 9.10751L81.0343 7.25967L83.1828 7.33747C83.1828 8.55825 81.518 22.1132 81.518 22.1132Z"
         fill="#393536"
@@ -187,11 +187,11 @@ const TopRightLight = (props: any) => (
         y2="27.5228"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#231F20" />
-        <stop offset="0.427271" stop-color="#393536" />
-        <stop offset="0.48" stop-color="#393536" />
-        <stop offset="0.682233" stop-color="#393536" />
-        <stop offset="1" stop-color="#231F20" />
+        <stop stopColor="#231F20" />
+        <stop offset="0.427271" stopColor="#393536" />
+        <stop offset="0.48" stopColor="#393536" />
+        <stop offset="0.682233" stopColor="#393536" />
+        <stop offset="1" stopColor="#231F20" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_349_5"
@@ -201,15 +201,15 @@ const TopRightLight = (props: any) => (
         y2="30.6943"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FBF1C8" />
-        <stop offset="0.011236" stop-color="#FBF1C8" />
-        <stop offset="0.174157" stop-color="#F8DA91" />
-        <stop offset="0.297753" stop-color="#F9E4A1" />
-        <stop offset="0.539326" stop-color="#EACF93" />
-        <stop offset="0.657303" stop-color="#F1D292" />
-        <stop offset="0.780899" stop-color="#FBEFCB" />
-        <stop offset="0.960674" stop-color="#F8E2AE" />
-        <stop offset="1" stop-color="#F8E2AE" />
+        <stop stopColor="#FBF1C8" />
+        <stop offset="0.011236" stopColor="#FBF1C8" />
+        <stop offset="0.174157" stopColor="#F8DA91" />
+        <stop offset="0.297753" stopColor="#F9E4A1" />
+        <stop offset="0.539326" stopColor="#EACF93" />
+        <stop offset="0.657303" stopColor="#F1D292" />
+        <stop offset="0.780899" stopColor="#FBEFCB" />
+        <stop offset="0.960674" stopColor="#F8E2AE" />
+        <stop offset="1" stopColor="#F8E2AE" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_349_5"
@@ -219,11 +219,11 @@ const TopRightLight = (props: any) => (
         y2="1.43009"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#231F20" />
-        <stop offset="0.427271" stop-color="#393536" />
-        <stop offset="0.48" stop-color="#393536" />
-        <stop offset="0.682233" stop-color="#393536" />
-        <stop offset="1" stop-color="#231F20" />
+        <stop stopColor="#231F20" />
+        <stop offset="0.427271" stopColor="#393536" />
+        <stop offset="0.48" stopColor="#393536" />
+        <stop offset="0.682233" stopColor="#393536" />
+        <stop offset="1" stopColor="#231F20" />
       </linearGradient>
       <linearGradient
         id="paint3_linear_349_5"
@@ -233,11 +233,11 @@ const TopRightLight = (props: any) => (
         y2="6.18248"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#231F20" />
-        <stop offset="0.243333" stop-color="#3F4048" />
-        <stop offset="0.5" stop-color="#231F20" />
-        <stop offset="0.696667" stop-color="#3F4048" />
-        <stop offset="1" stop-color="#231F20" />
+        <stop stopColor="#231F20" />
+        <stop offset="0.243333" stopColor="#3F4048" />
+        <stop offset="0.5" stopColor="#231F20" />
+        <stop offset="0.696667" stopColor="#3F4048" />
+        <stop offset="1" stopColor="#231F20" />
       </linearGradient>
       <linearGradient
         id="paint4_linear_349_5"
@@ -247,11 +247,11 @@ const TopRightLight = (props: any) => (
         y2="13.2877"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#231F20" />
-        <stop offset="0.427271" stop-color="#393536" />
-        <stop offset="0.48" stop-color="#393536" />
-        <stop offset="0.682233" stop-color="#393536" />
-        <stop offset="1" stop-color="#231F20" />
+        <stop stopColor="#231F20" />
+        <stop offset="0.427271" stopColor="#393536" />
+        <stop offset="0.48" stopColor="#393536" />
+        <stop offset="0.682233" stopColor="#393536" />
+        <stop offset="1" stopColor="#231F20" />
       </linearGradient>
       <linearGradient
         id="paint5_linear_349_5"
@@ -261,11 +261,11 @@ const TopRightLight = (props: any) => (
         y2="13.9857"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#231F20" />
-        <stop offset="0.427271" stop-color="#393536" />
-        <stop offset="0.48" stop-color="#393536" />
-        <stop offset="0.682233" stop-color="#393536" />
-        <stop offset="1" stop-color="#231F20" />
+        <stop stopColor="#231F20" />
+        <stop offset="0.427271" stopColor="#393536" />
+        <stop offset="0.48" stopColor="#393536" />
+        <stop offset="0.682233" stopColor="#393536" />
+        <stop offset="1" stopColor="#231F20" />
       </linearGradient>
       <linearGradient
         id="paint6_linear_349_5"
@@ -275,11 +275,11 @@ const TopRightLight = (props: any) => (
         y2="14.7941"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#231F20" />
-        <stop offset="0.427271" stop-color="#393536" />
-        <stop offset="0.48" stop-color="#393536" />
-        <stop offset="0.682233" stop-color="#393536" />
-        <stop offset="1" stop-color="#231F20" />
+        <stop stopColor="#231F20" />
+        <stop offset="0.427271" stopColor="#393536" />
+        <stop offset="0.48" stopColor="#393536" />
+        <stop offset="0.682233" stopColor="#393536" />
+        <stop offset="1" stopColor="#231F20" />
       </linearGradient>
       <radialGradient
         id="paint7_radial_349_5"
@@ -289,8 +289,8 @@ const TopRightLight = (props: any) => (
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(74.5369 32.5855) rotate(129.661) scale(86.6143 56.762)"
       >
-        <stop stop-color="#FFFBED" />
-        <stop offset="1" stop-color="#E4DEDE" stop-opacity="0" />
+        <stop stopColor="#FFFBED" />
+        <stop offset="1" stopColor="#E4DEDE" stopOpacity="0" />
       </radialGradient>
       <clipPath id="clip0_349_5">
         <rect
