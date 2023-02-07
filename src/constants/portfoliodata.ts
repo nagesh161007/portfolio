@@ -61,6 +61,11 @@ const portfoliodata = {
           title: "PostgreSql",
         },
         {
+          id: "jenkins",
+          progress: 40,
+          title: "PostgreSql",
+        },
+        {
           id: "redis",
           progress: 20,
           title: "Redis",
@@ -88,21 +93,6 @@ const portfoliodata = {
           title: "React",
         },
         {
-          id: "reactnative",
-          progress: 60,
-          title: "React Native",
-        },
-        {
-          id: "html",
-          progress: 90,
-          title: "HTML",
-        },
-        {
-          id: "css",
-          progress: 90,
-          title: "CSS",
-        },
-        {
           id: "nodejs",
           progress: 90,
           title: "Node.js",
@@ -116,6 +106,11 @@ const portfoliodata = {
           id: "redux",
           progress: 80,
           title: "Redux",
+        },
+        {
+          id: "storybook",
+          progress: 70,
+          title: "Storybook",
         },
         {
           id: "javascript",
@@ -138,20 +133,25 @@ const portfoliodata = {
           title: "Kubernetes",
         },
         {
-          id: "redis",
-          progress: 20,
-          title: "Redis",
+          id: "reactnative",
+          progress: 60,
+          title: "React Native",
         },
         {
-          id: "storybook",
-          progress: 70,
-          title: "Storybook",
+          id: "html",
+          progress: 90,
+          title: "HTML",
+        },
+        {
+          id: "css",
+          progress: 90,
+          title: "CSS",
         },
       ],
       traits: [
         { title: "interviewing Candidates", id: "interview" },
         { title: "onboarding Engineers", id: "mentor" },
-        { title: "UI Infrastrcture", id: "insfrastructure" },
+        { title: "UI Infrastrcture", id: "infrastructure" },
       ],
       experience: [
         "Revamped EMI page in React Native for mobile app and React.js for mobile site, desktop site and mobile app with advance filtering and recommendations based on saved cards increasing EMI plan adoption.",
@@ -170,6 +170,56 @@ const portfoliodata = {
       ],
       skills: [
         {
+          id: "react",
+          progress: 90,
+          title: "React",
+        },
+        {
+          id: "nextjs",
+          progress: 60,
+          title: "Next.js",
+        },
+        {
+          id: "ember",
+          progress: 90,
+          title: "Ember",
+        },
+        {
+          id: "javascript",
+          progress: 90,
+          title: "Javascript",
+        },
+        {
+          id: "typescript",
+          progress: 70,
+          title: "Typescript",
+        },
+        {
+          id: "nodejs",
+          progress: 90,
+          title: "Nodejs",
+        },
+        {
+          id: "figma",
+          progress: 30,
+          title: "Figma",
+        },
+        {
+          id: "aws",
+          progress: 40,
+          title: "AWS",
+        },
+        {
+          id: "d3js",
+          progress: 30,
+          title: "D3.js",
+        },
+        {
+          id: "threejs",
+          progress: 30,
+          title: "Three.js",
+        },
+        {
           id: "html",
           progress: 90,
           title: "HTML",
@@ -180,34 +230,9 @@ const portfoliodata = {
           title: "CSS",
         },
         {
-          id: "javascript",
-          progress: 85,
-          title: "Javascript",
-        },
-        {
-          id: "react",
-          progress: 85,
-          title: "React",
-        },
-        {
-          id: "nodejs",
-          progress: 20,
-          title: "Nodejs",
-        },
-        {
           id: "java",
           progress: 30,
           title: "Java",
-        },
-        {
-          id: "psql",
-          progress: 20,
-          title: "Postgress",
-        },
-        {
-          id: "redis",
-          progress: 20,
-          title: "Redis",
         },
       ],
       traits: [
@@ -217,7 +242,8 @@ const portfoliodata = {
         { title: "Problem solving", id: "problemsolving" },
       ],
       experience: [
-        "Design and developed web application for neural research scientists to view and share scans and studies using React.js, Flask, MySQL, AWS S3, Lambda",
+        "Reasearch Assistant Project - Design and developing web application for neural research scientists to view and share scans and studies using React.js, Flask, MySQL, AWS S3, Lambda",
+        "Coursework: Application Engineering and Development,Database management and Database Design, Network sturctures and Cloud Computing, Program structures and Algorithms",
       ],
     },
   },

@@ -24,8 +24,8 @@ function Modal(props: modalProps) {
         </div>
         <div className={styles.modalBody}>
           <div className={styles.info}>
-            Obssesed with FIFA Ultimate team game. Why not FUT theme based
-            porfolio ?
+            Obsessed with FIFA Ultimate team game. Why not FUT theme based
+            portfolio...
           </div>
           <img
             src={"/themeInfo.png"}

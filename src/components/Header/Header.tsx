@@ -26,7 +26,6 @@ function Header() {
         <a
           href="mailto:seeni.n@northeastern.edu"
           rel="noreferrer"
-          target={"_blank"}
           aria-label="mail"
         >
           <Mail></Mail>

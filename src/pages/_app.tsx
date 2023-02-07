@@ -1,12 +1,31 @@
+/* eslint-disable @next/next/no-script-component-in-head */
 import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 import Layout from "@/components/Layout";
 import MobileResponsiveOverlay from "../components/MobileResponsiveOverlay";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layout>
+      <Analytics></Analytics>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-GWHSW31S1C"
+      ></Script>
+      <Script
+        id="show-banner"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: ` window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GWHSW31S1C');`,
+        }}
+      />
       <MobileResponsiveOverlay></MobileResponsiveOverlay>
       <Head>
         <title>Nageshwara sairam</title>

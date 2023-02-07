@@ -39,7 +39,6 @@ function Navbar() {
   const [isModalOpen, openModal] = useState(false);
   useEffect(() => {
     setTimeout(() => {
-      console.log("set loading");
       setLoading(false);
     }, 4000);
   }, []);

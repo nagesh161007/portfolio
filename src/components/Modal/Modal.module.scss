@@ -13,12 +13,12 @@
     opacity: 0;
     border: 1px solid #556c95;
     min-width: 500px;
-    max-width: 600px;
+    max-width: 700px;
     width: auto;
     margin: auto;
     min-height: 500px;
     max-height: 600px;
-    animation: showModal 100ms ease-in 100ms 1 forwards;
+    animation: showModal 300ms ease-in 200ms 1 forwards;
     display: flex;
     flex-direction: column;
 
