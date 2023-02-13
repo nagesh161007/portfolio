@@ -8,5 +8,5 @@ const projectCardStory = {
 export default projectCardStory;
 
 export const ProjectCardStory = () => {
-  return <ProjectCard />;
+  return <div></div>;
 };
