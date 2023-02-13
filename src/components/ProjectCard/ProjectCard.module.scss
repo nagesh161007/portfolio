@@ -1,0 +1,43 @@
+@import "../../styles/variables.scss";
+
+.projectCard {
+  border: 1px solid $border-color;
+  background-color: $background-color;
+  color: #f2f2f2;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:hover {
+    background-color: $hover-background;
+  }
+  .headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    .header {
+      font-size: 1.5rem;
+      font-style: italic;
+      font-weight: 600;
+      color: #f8eede;
+      text-transform: uppercase;
+    }
+  }
+
+  .icon {
+    align-self: center;
+    padding: 3rem;
+  }
+  .footer {
+    background-color: $background-blue;
+    padding: 1rem;
+  }
+  .date {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    align-self: flex-end;
+    margin: 1rem;
+  }
+}

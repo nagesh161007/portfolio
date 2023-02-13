@@ -1,0 +1,10 @@
+.projectContainer {
+  display: flex;
+  padding: 4rem 0;
+  justify-content: center;
+  .projectList {
+    display: grid;
+    gap: 1rem 2rem;
+    grid-template-columns: 50% 50%;
+  }
+}

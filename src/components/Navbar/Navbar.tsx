@@ -18,7 +18,7 @@ export const navBarItems = [
     title: "projects",
     url: "/projects",
     icon: ProjectIcon,
-    enabled: false,
+    enabled: true,
   },
   {
     title: "Path",
@@ -80,21 +80,21 @@ function Navbar() {
         </li>
         {navBarItems.map((navItem, index) => {
           return (
-            <li
-              className={`${styles.navItem}  ${
-                router.pathname === navItem.url ? styles.active : ""
-              } ${navItem.enabled ? styles.enabled : styles.disabled}`}
-              key={index}
-            >
-              <Link href={navItem.url}>
+            <Link href={navItem.url} key={index}>
+              <li
+                className={`${styles.navItem}  ${
+                  router.pathname === navItem.url ? styles.active : ""
+                } ${navItem.enabled ? styles.enabled : styles.disabled}`}
+                key={index}
+              >
                 <navItem.icon
                   color={
                     router.pathname === navItem.url ? "#243962" : "#D8D5DD"
                   }
                 ></navItem.icon>
                 <p className={styles.name}>{navItem.title}</p>
-              </Link>
-            </li>
+              </li>
+            </Link>
           );
         })}
       </ul>
