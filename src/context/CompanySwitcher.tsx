@@ -30,9 +30,9 @@ interface CompanySwitcherState {
 }
 
 export default function CompanySwitcher(props: any) {
-  const [company, setCompany] = useState<CompanySwitcherState>(companyData[0]);
+  const [company, setCompany] = useState<CompanySwitcherState>(companyData[1]);
 
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedIndex, setSelectedIndex] = useState(1);
 
   const switchCompany = (index?: number) => {
     if (selectedIndex == companyData.length - 1) {

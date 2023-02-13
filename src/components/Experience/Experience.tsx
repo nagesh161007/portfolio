@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styles from "./Experience.module.scss";
 import { CompanyContext } from "@/context/CompanySwitcher";
 import portfoliodata from "@/constants/portfoliodata";
-
+import Image from "next/image";
 function Experience() {
   const { currentCompany } = useContext(CompanyContext);
 
@@ -16,7 +16,13 @@ function Experience() {
         {workexperience.map((experience: any, index: number) => {
           return (
             <li key={index} className={styles.experience}>
-              • {experience}
+              <Image
+                src={"/star.svg"}
+                height={10}
+                width={10}
+                alt="list-icon"
+              ></Image>{" "}
+              {experience}
             </li>
           );
         })}
