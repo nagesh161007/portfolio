@@ -14,7 +14,6 @@ export interface ProjectProps {
 }
 
 function ProjectCard(props: ProjectProps) {
-  console.log(props.project);
   const { title, image, link, date, description } = props.project;
   return (
     <a
