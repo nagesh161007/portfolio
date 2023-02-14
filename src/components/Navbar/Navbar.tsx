@@ -80,11 +80,15 @@ function Navbar() {
         </li>
         {navBarItems.map((navItem, index) => {
           return (
-            <Link href={navItem.url} key={index}>
+            <Link
+              href={navItem.url}
+              key={index}
+              className={navItem.enabled ? styles.enabled : styles.disabled}
+            >
               <li
                 className={`${styles.navItem}  ${
                   router.pathname === navItem.url ? styles.active : ""
-                } ${navItem.enabled ? styles.enabled : styles.disabled}`}
+                } `}
                 key={index}
               >
                 <navItem.icon
