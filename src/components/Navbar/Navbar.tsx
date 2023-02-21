@@ -21,15 +21,15 @@ export const navBarItems = [
     enabled: true,
   },
   {
-    title: "Path",
-    url: "/blog",
-    icon: PathIcon,
-    enabled: false,
-  },
-  {
     title: "cert",
     url: "/certifications",
     icon: CertIcon,
+    enabled: true,
+  },
+  {
+    title: "Path",
+    url: "/blog",
+    icon: PathIcon,
     enabled: false,
   },
 ];
