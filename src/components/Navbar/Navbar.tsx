@@ -28,9 +28,10 @@ export const navBarItems = [
   },
   {
     title: "Path",
-    url: "/blog",
+    url: "https://frontendmasters.com/u/nageshsairam/",
     icon: PathIcon,
-    enabled: false,
+    enabled: true,
+    externalLink: true,
   },
 ];
 
@@ -83,6 +84,7 @@ function Navbar() {
             <Link
               href={navItem.url}
               key={index}
+              target={navItem.externalLink ? "_blank" : ""}
               className={navItem.enabled ? styles.enabled : styles.disabled}
             >
               <li
