@@ -6,10 +6,26 @@ import MobileResponsiveOverlay from "../components/MobileResponsiveOverlay";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
+import type { ReactElement, ReactNode } from "react";
+import type { NextPage } from "next";
 
-export default function App({ Component, pageProps }: AppProps) {
+export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
+  getLayout?: (page: ReactElement) => ReactNode;
+};
+
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout;
+};
+
+export default function App({ Component, pageProps }: AppPropsWithLayout) {
+  const getLayout =
+    Component.getLayout ||
+    ((page) => {
+      return <Layout>{page}</Layout>;
+    });
+
   return (
-    <Layout>
+    <>
       <Analytics></Analytics>
       <Script
         async
@@ -58,7 +74,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content={"https://www.nageshsairam.com/preview.png"}
         ></meta>
       </Head>
-      <Component {...pageProps} />
-    </Layout>
+      {getLayout(<Component {...pageProps} />)}
+    </>
   );
 }
