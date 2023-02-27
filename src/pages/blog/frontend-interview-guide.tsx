@@ -68,7 +68,7 @@ export default function BlogPage({
           content="https://images.unsplash.com/photo-1543285198-3af15c4592ce?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
         ></meta>
       </Head>
-      <NotionPage recordMap={recordMap} rootPageId={pageId} />;
+      <NotionPage recordMap={recordMap} rootPageId={pageId} />
     </>
   );
 }
