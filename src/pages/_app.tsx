@@ -21,7 +21,45 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout =
     Component.getLayout ||
     ((page) => {
-      return <Layout>{page}</Layout>;
+      return (
+        <Layout>
+          <div className="app-pages">
+            <Head>
+              <title>Nageshwara sairam</title>
+              <meta name="title" content="Nageshwara sairam" />
+              <meta
+                name="description"
+                content="Senior Frontend Engineer at Flipkart | Full stack developer. Currently Graduate Student in MS in Information Systems at Northeastern University."
+              />
+              <meta property="og:type" content="website" />
+              <meta property="og:url" content="https://nageshsairam.com" />
+              <meta property="og:title" content="Nageshwara sairam" />
+              <meta
+                property="og:description"
+                content="Senior Frontend Engineer at Flipkart | Full stack developer. Currently Graduate Student in MS in Information Systems at Northeastern University."
+              />
+              <meta
+                property="og:image"
+                content={"https://www.nageshsairam.com/preview.png"}
+              />
+
+              <meta property="twitter:card" content="website" />
+              <meta property="twitter:url" content="https://nageshsairam.com" />
+              <meta property="twitter:title" content="Nageshwara sairam" />
+              <meta
+                property="twitter:description"
+                content="Senior Frontend Engineer at Flipkart | Full stack developer. Currently Graduate Student in MS in Information Systems at Northeastern University."
+              />
+              <meta
+                property="twitter:image"
+                content={"https://www.nageshsairam.com/preview.png"}
+              ></meta>
+            </Head>
+            <MobileResponsiveOverlay></MobileResponsiveOverlay>
+            {page}
+          </div>
+        </Layout>
+      );
     });
 
   return (
@@ -42,38 +80,6 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
         gtag('config', 'G-GWHSW31S1C');`,
         }}
       />
-      <MobileResponsiveOverlay></MobileResponsiveOverlay>
-      <Head>
-        <title>Nageshwara sairam</title>
-        <meta name="title" content="Nageshwara sairam" />
-        <meta
-          name="description"
-          content="Senior Frontend Engineer at Flipkart | Full stack developer. Currently Graduate Student in MS in Information Systems at Northeastern University."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://nageshsairam.com" />
-        <meta property="og:title" content="Nageshwara sairam" />
-        <meta
-          property="og:description"
-          content="Senior Frontend Engineer at Flipkart | Full stack developer. Currently Graduate Student in MS in Information Systems at Northeastern University."
-        />
-        <meta
-          property="og:image"
-          content={"https://www.nageshsairam.com/preview.png"}
-        />
-
-        <meta property="twitter:card" content="website" />
-        <meta property="twitter:url" content="https://nageshsairam.com" />
-        <meta property="twitter:title" content="Nageshwara sairam" />
-        <meta
-          property="twitter:description"
-          content="Senior Frontend Engineer at Flipkart | Full stack developer. Currently Graduate Student in MS in Information Systems at Northeastern University."
-        />
-        <meta
-          property="twitter:image"
-          content={"https://www.nageshsairam.com/preview.png"}
-        ></meta>
-      </Head>
       {getLayout(<Component {...pageProps} />)}
     </>
   );
