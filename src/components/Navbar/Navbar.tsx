@@ -71,6 +71,11 @@ function Navbar() {
     setTimeout(() => {
       setLoading(false);
     }, 4000);
+    // @ts-ignore
+    gtag("event", "tracking", {
+      source: window.location.href,
+      referrer: window?.frames?.top?.document.referrer,
+    });
     if (window.location.search && window.location.search.includes("resume")) {
       sendTracking();
     }
