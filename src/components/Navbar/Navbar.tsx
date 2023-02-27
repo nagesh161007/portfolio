@@ -2,7 +2,13 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.scss";
 import { useRouter } from "next/router";
-import { HomeIcon, ProjectIcon, PathIcon, CertIcon } from "./icons";
+import {
+  HomeIcon,
+  ProjectIcon,
+  PathIcon,
+  CertIcon,
+  InterviewIcon,
+} from "./icons";
 import Image from "next/image";
 import InfoIcon from "./icons/InfoIcon";
 import Modal from "../Modal/Modal";
@@ -33,8 +39,31 @@ export const navBarItems = [
     enabled: true,
     externalLink: true,
   },
+  {
+    title: "Interview guide",
+    url: "/blog/frontend-interview-guide",
+    icon: InterviewIcon,
+    enabled: true,
+  },
 ];
 
+const RESUME_TRACKER_URL = "";
+function sendTracking() {
+  fetch(`/api/tracking${window.location.search}`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(window.location.search),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Success:", data);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+}
 function Navbar() {
   const [isLoading, setLoading] = useState(true);
   const [isModalOpen, openModal] = useState(false);
@@ -42,6 +71,9 @@ function Navbar() {
     setTimeout(() => {
       setLoading(false);
     }, 4000);
+    if (window.location.search && window.location.search.includes("resume")) {
+      sendTracking();
+    }
   }, []);
 
   const handleModalClose = () => {
