@@ -22,8 +22,8 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
     Component.getLayout ||
     ((page) => {
       return (
-        <Layout>
-          <div className="app-pages">
+        <div className="app-pages">
+          <Layout>
             <Head>
               <title>Nageshwara sairam</title>
               <meta name="title" content="Nageshwara sairam" />
@@ -57,8 +57,8 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
             </Head>
             <MobileResponsiveOverlay></MobileResponsiveOverlay>
             {page}
-          </div>
-        </Layout>
+          </Layout>
+        </div>
       );
     });
 
