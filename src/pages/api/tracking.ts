@@ -83,4 +83,5 @@ export default function handler(
   }
 
   main().catch(console.error);
+  res.send({ message: "acknowledged" });
 }
