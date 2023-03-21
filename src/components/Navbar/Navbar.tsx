@@ -51,9 +51,11 @@ function sendTracking() {
   const url = new URL(window.location.href);
   const searchParams = url.searchParams;
   const utmTracking = searchParams.get("utm_tracking");
-  if (!utmTracking) {
+  if (!utmTracking && localStorage.getItem("utm_tracking_resume")) {
     return;
   }
+
+  localStorage.setItem("utm_tracking_resume", utmTracking ? utmTracking : "");
   const data = { utm_source: utmTracking ? utmTracking : "" };
 
   const options = {
