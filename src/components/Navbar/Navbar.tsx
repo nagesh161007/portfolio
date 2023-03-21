@@ -47,38 +47,46 @@ export const navBarItems = [
   },
 ];
 
-const RESUME_TRACKER_URL = "";
 function sendTracking() {
-  fetch(`/api/tracking${window.location.search}`, {
+  const url = new URL(window.location.href);
+  const searchParams = url.searchParams;
+  const utmTracking = searchParams.get("utm_tracking");
+  const data = { utm_source: utmTracking ? utmTracking : "" };
+
+  const options = {
     method: "POST",
+    body: JSON.stringify(data),
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(window.location.search),
-  })
-    .then((response) => response.json())
+  };
+
+  // make the fetch request to the API endpoint
+  fetch("api/tracking", options)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
     .then((data) => {
-      console.log("Success:", data);
+      console.log("Data sent successfully:", data);
     })
     .catch((error) => {
-      console.error("Error:", error);
+      console.error("Error sending data:", error);
     });
 }
+
 function Navbar() {
   const [isLoading, setLoading] = useState(true);
   const [isModalOpen, openModal] = useState(false);
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 4000);
-    // @ts-ignore
-    gtag("event", "tracking", {
-      source: window.location.href,
-      referrer: window?.frames?.top?.document.referrer,
-    });
-    if (window.location.search && window.location.search.includes("resume")) {
-      sendTracking();
-    }
+    console.log("tracking");
+    sendTracking();
   }, []);
 
   const handleModalClose = () => {
