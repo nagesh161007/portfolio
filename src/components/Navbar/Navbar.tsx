@@ -51,7 +51,10 @@ function sendTracking() {
   const url = new URL(window.location.href);
   const searchParams = url.searchParams;
   const utmTracking = searchParams.get("utm_tracking");
-  if (!utmTracking && localStorage.getItem("utm_tracking_resume")) {
+  if (
+    Boolean(!utmTracking) ||
+    Boolean(localStorage.getItem("utm_tracking_resume"))
+  ) {
     return;
   }
 
