@@ -81,16 +81,10 @@ export default async function handler(
 
       console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
     } catch (error) {
-      return res
-        .status(500)
-        .send({
-          message: process.env.MAIL_PASSWORD ? process.env.MAIL_PASSWORD : "",
-        });
+      return res.status(500).send({ message: "email failure" });
     }
 
-    res.send({
-      message: process.env.MAIL_PASSWORD ? process.env.MAIL_PASSWORD : "",
-    });
+    res.send({ message: "acknowledged" });
   }
 
   main().catch(console.error);
