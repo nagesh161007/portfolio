@@ -13,7 +13,6 @@ export default async function handler(
   const companyName = req.body.utm_source;
 
   async function main() {
-    console.log(process.env.MAIL_PASSWORD);
     let transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 465,
