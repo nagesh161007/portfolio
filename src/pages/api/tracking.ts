@@ -6,13 +6,14 @@ type Data = {
   message: string;
 };
 
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
   const companyName = req.body.utm_source;
 
   async function main() {
+    console.log(process.env.MAIL_PASSWORD);
     let transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 465,
@@ -23,12 +24,12 @@ export default function handler(
       },
     });
 
-    // send mail with defined transport object
-    let info = await transporter.sendMail({
-      from: "frontendprep@gmail.com",
-      to: "seeni.n@northeastern.edu",
-      subject: `Your profile is viewed by ${companyName}`,
-      html: `<!DOCTYPE html>
+    try {
+      let info = await transporter.sendMail({
+        from: "frontendprep@gmail.com",
+        to: "seeni.n@northeastern.edu",
+        subject: `Your profile is viewed by ${companyName}`,
+        html: `<!DOCTYPE html>
               <html lang="en">
               <head>
                   <meta charset="UTF-8">
@@ -75,13 +76,22 @@ export default function handler(
               </body>
               </html>
               `,
+      });
+      console.log("Message sent: %s", info.messageId);
+
+      console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+    } catch (error) {
+      return res
+        .status(500)
+        .send({
+          message: process.env.MAIL_PASSWORD ? process.env.MAIL_PASSWORD : "",
+        });
+    }
+
+    res.send({
+      message: process.env.MAIL_PASSWORD ? process.env.MAIL_PASSWORD : "",
     });
-
-    console.log("Message sent: %s", info.messageId);
-
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
   }
 
   main().catch(console.error);
-  res.send({ message: "acknowledged" });
 }
