@@ -79,11 +79,10 @@ export default async function handler(
       console.log("Message sent: %s", info.messageId);
 
       console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+      res.send({ message: "acknowledged" });
     } catch (error) {
       return res.status(500).send({ message: "email failure" });
     }
-
-    res.send({ message: "acknowledged" });
   }
 
   main().catch(console.error);
