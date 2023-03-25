@@ -66,9 +66,14 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
     <>
       <Analytics></Analytics>
       <Script
-        async
+        defer
         src="https://www.googletagmanager.com/gtag/js?id=G-GWHSW31S1C"
       ></Script>
+      <script
+        defer
+        src="https://tag.clearbitscripts.com/v1/pk_5e6f944f1309308434f71dbcb0a18342/tags.js"
+        referrerPolicy="strict-origin-when-cross-origin"
+      ></script>
       <Script
         id="show-banner"
         strategy="afterInteractive"
