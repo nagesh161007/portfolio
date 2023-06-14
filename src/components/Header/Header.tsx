@@ -11,8 +11,7 @@ function Header() {
       <div className={styles.name}>NS 23</div>
       <div className={`${styles.status} header-description`}>
         Hi !. I am Nagesh, Former Senior Frontend Engineer at Flipkart.
-        Currently Looking for summer 2023 Software Engineer intership
-        opputunities
+        Currently Looking for Full-time Frontend Developer Oppurtunities
       </div>
       <div className={styles.links}>
         <a

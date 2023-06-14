@@ -8,6 +8,7 @@ import {
   PathIcon,
   CertIcon,
   InterviewIcon,
+  TopMateIcon
 } from "./icons";
 import Image from "next/image";
 import InfoIcon from "./icons/InfoIcon";
@@ -18,33 +19,40 @@ export const navBarItems = [
     title: "home",
     url: "/",
     icon: HomeIcon,
-    enabled: true,
+    enabled: true
   },
   {
     title: "projects",
     url: "/projects",
     icon: ProjectIcon,
-    enabled: true,
+    enabled: true
   },
   {
     title: "cert",
     url: "/certifications",
     icon: CertIcon,
-    enabled: true,
+    enabled: true
   },
   {
     title: "Path",
     url: "https://frontendmasters.com/u/nageshsairam/",
     icon: PathIcon,
     enabled: true,
-    externalLink: true,
+    externalLink: true
   },
   {
-    title: "Interview guide",
+    title: "Blog",
     url: "/blog/frontend-interview-guide",
     icon: InterviewIcon,
-    enabled: true,
+    enabled: true
   },
+  {
+    title: "TopMate",
+    url: "https://topmate.io/nageshwara_sairam10",
+    icon: TopMateIcon,
+    enabled: true,
+    externalLink: true
+  }
 ];
 
 function sendTracking() {
@@ -65,8 +73,8 @@ function sendTracking() {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
-      "Content-Type": "application/json",
-    },
+      "Content-Type": "application/json"
+    }
   };
 
   // make the fetch request to the API endpoint
