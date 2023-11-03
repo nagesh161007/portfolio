@@ -45,13 +45,6 @@ export const navBarItems = [
     url: "/blog/frontend-interview-guide",
     icon: InterviewIcon,
     enabled: true
-  },
-  {
-    title: "TopMate",
-    url: "https://topmate.io/nageshwara_sairam10",
-    icon: TopMateIcon,
-    enabled: true,
-    externalLink: true
   }
 ];
 
