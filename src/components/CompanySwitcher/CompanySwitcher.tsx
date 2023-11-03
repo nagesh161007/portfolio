@@ -7,18 +7,23 @@ const companies = [
   {
     src: "/logos/Freshworks.svg",
     alt: "Freshworks",
-    id: companiesConstant.FRESHWORKS,
+    id: companiesConstant.FRESHWORKS
   },
   {
     src: "/logos/Flipkart.svg",
     alt: "Flipkart",
-    id: companiesConstant.FLIPKART,
+    id: companiesConstant.FLIPKART
   },
   {
     src: "/logos/Northeastern.svg",
     alt: "Northeastern",
-    id: companiesConstant.NORTHEASTERN,
+    id: companiesConstant.NORTHEASTERN
   },
+  {
+    src: "/spectroCloud.png",
+    alt: "Spectro Cloud",
+    id: companiesConstant.SPECTROCLOUD
+  }
 ];
 
 function CompanySwitcher() {

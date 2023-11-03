@@ -10,19 +10,22 @@ interface CurrentUserContextType {
 
 export const CompanyContext = React.createContext<CurrentUserContextType>({
   currentCompany: { company: "" },
-  switchCompany: () => {},
+  switchCompany: () => {}
 });
 
 const companyData = [
   {
-    company: company.FRESHWORKS,
+    company: company.FRESHWORKS
   },
   {
-    company: company.FLIPKART,
+    company: company.FLIPKART
   },
   {
-    company: company.NORTHEASTERN,
+    company: company.NORTHEASTERN
   },
+  {
+    company: company.SPECTROCLOUD
+  }
 ];
 
 interface CompanySwitcherState {

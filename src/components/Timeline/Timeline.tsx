@@ -7,7 +7,7 @@ import {
   TopLeftLight,
   TopRightLight,
   BottomLeftLight,
-  BottomRightLight,
+  BottomRightLight
 } from "./Icons";
 
 const cards = [
@@ -21,8 +21,8 @@ const cards = [
       currentCompanyImage: "/logos/Freshworks.svg",
       nextCompanyImage: "/logos/Flipkart.svg",
       nextCompany: "Flipkart",
-      nextRole: "UI Engineer",
-    },
+      nextRole: "UI Engineer"
+    }
   },
   {
     id: companies.FLIPKART,
@@ -34,10 +34,26 @@ const cards = [
       nextCompanyImage: "/logos/Northeastern.svg",
       nextCompany: "Northeastern University",
       currentCompany: "Flipkart",
-      nextRole: "Graduate Student",
-    },
+      nextRole: "Graduate Student"
+    }
   },
-  { id: companies.NORTHEASTERN, url: "/cards/Northeastern.png" },
+  {
+    id: companies.NORTHEASTERN,
+    url: "/cards/Northeastern.png",
+    year: "June 2023 - September 2023",
+    history: {
+      currentRole: "Graduate Student",
+      currentCompanyImage: "/logos/Northeastern.svg",
+      nextCompanyImage: "/spectroCloud.png",
+      nextCompany: "SpectroCloud",
+      currentCompany: "Northeastern University",
+      nextRole: "Frontend  Intern"
+    }
+  },
+  {
+    id: companies.SPECTROCLOUD,
+    url: "/cards/SpectroCloud.png"
+  }
 ];
 
 function Timeline() {
@@ -94,7 +110,7 @@ function Card(props: any) {
                 src={card.history.nextCompanyImage}
                 alt="next company"
                 height={32}
-                width={80}
+                width={40}
               ></Image>
             </div>
           </div>
