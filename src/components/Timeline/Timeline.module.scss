@@ -105,6 +105,9 @@
     .duration {
       text-transform: uppercase;
       font-size: 0.675rem;
+      min-width: 100px;
+      text-align: center;
+      margin: 0px 10px;
     }
   }
 }

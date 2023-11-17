@@ -101,7 +101,7 @@ function Card(props: any) {
                 src={card.history.currentCompanyImage}
                 alt="current Company"
                 height={32}
-                width={80}
+                width={32}
               ></Image>
             </div>
             <div className={styles.duration}>{card.year}</div>

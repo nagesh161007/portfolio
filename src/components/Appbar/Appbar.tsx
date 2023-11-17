@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 
 const titleConfig: Record<string, string> = {
   "/projects": "PROJECTS",
-  "/": "HOME",
+  "/": "HOME"
 };
 
 function Appbar() {
@@ -21,16 +21,6 @@ function Appbar() {
     <div className={styles.appbar}>
       <div className={styles.title}>{getByTitle(router.pathname)}</div>
       <div className={styles.leftSection}>
-        <div>
-          <a href="https://drive.google.com/u/0/uc?id=1QZxevdNOQyc7111GlJ9Iqvllr2R04i_v&export=download">
-            <Image
-              src={"/resume.png"}
-              width={32}
-              height={32}
-              alt={"resume"}
-            ></Image>
-          </a>
-        </div>
         <div className={styles.info}>
           <div className={styles.name}>Nagesh</div>
           <div className={styles.estimated}>EST. 2018</div>
