@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import styles from "./Timeline.module.scss";
 import { CompanyContext } from "@/context/CompanySwitcher";
 import companies from "@/constants/company";
@@ -57,6 +57,14 @@ const cards = [
 ];
 
 function Timeline() {
+  const { switchCompany } = useContext(CompanyContext);
+
+  useEffect(() => {
+    setTimeout(() => {
+      switchCompany(3);
+    }, 2000);
+  }, []);
+
   return (
     <div className={styles.timelineContainer}>
       {cards.map((card, index) => {

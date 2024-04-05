@@ -43,16 +43,16 @@ function Skill(props: Skill) {
       <div className={styles.skillRatingContainer}>
         <div className={styles.skillRatingInfo}>
           <div className={styles.skillName}>{title}</div>
-          <div className={styles.rating}>{progress}</div>
+          {/* <div className={styles.rating}>{progress}</div> */}
         </div>
-        <div className={styles.skillProgressContainer}>
+        {/* <div className={styles.skillProgressContainer}>
           <div
             className={styles.skillProgressBar}
             style={{ width: `${progress}%` }}
           >
             <div className={styles.progress}></div>
           </div>
-        </div>
+        </div> */}
       </div>
     </li>
   );
